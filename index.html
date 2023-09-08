@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Stop Watch</h1>
+
+        <div class="numDiv">
+            <span id="hour">00</span> :
+            <span id="min">00</span> :
+            <span id="sec">00</span> :
+            <span id="msec">00</span>
+        </div>
+
+        <div>
+            <button onclick="pause()">Pause</button>
+            <button class="startbtn" onclick="start()"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512">
+                    <style>
+                        svg {
+                            fill: #ffffff
+                        }
+                    </style>
+                    <path
+                        d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                </svg></button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

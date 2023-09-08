@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body,
+h1,
+div,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color for the body */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the .main container vertically and horizontally */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style the h1 */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #ff6f61, #ffaa00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Style the .numDiv container */
+.numDiv {
+    font-size: 48px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #D4D4D2;
+    border-radius: 100%;
+    width: 340px;
+    height: 340px;
+}
+
+/* Style the time spans */
+span {
+    margin: 0 10px;
+    background: linear-gradient(135deg, #ff6f61, #ffaa00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Style the buttons */
+button {
+    font-size: 18px;
+    background: linear-gradient(135deg, #1C1C1C, #505050);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 80px 20px;
+    cursor: pointer;
+}
+
+button.startbtn {
+    background: linear-gradient(135deg, #ff6f61, #ffaa00);
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    padding: 15px 19px;
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .numDiv {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 80px 10px;
+    }
+
+    .numDiv {
+        width: 280.23px;
+        height: 280.23px;
+    }
+}
